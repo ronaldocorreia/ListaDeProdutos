@@ -1,0 +1,89 @@
+.main__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem 0;
+}
+
+.main__container__figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.main__container__figure > img {
+    background-color: var(--blue);
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.main__container__figure > figcaption {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.main__container__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+}
+
+.main__container__form > h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.main__container__form > label {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main__container__form > input {
+    width: 80%;
+    margin: 0 auto;
+    padding: 12px;
+    color: var(--black);
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.main__container__form > button {
+    margin: 2rem 0;
+    background-color: var(--blue);
+    padding: 1rem;
+    width: 80%;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1px solid var(--blue);
+    color: var(--white);
+
+}
+
+.main__container__form > p {
+    font-size: 0.8rem;
+}
+
+.main__container__form > p > span {
+    color: var(--mediumBlue);
+    cursor: pointer;
+}
+
+@media (min-width: 760px){
+    .main__container__form {
+        max-width: 600px;
+    }
+
+    .main__container__form > button:hover{
+        background-color: var(--mediumBlue);
+        color: var(--white);
+    }
+}
