@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <title>Cadastro - Kenzie Store</title>
 </head>
 <body>
-    
+    <main class="main__container">
+        <figure class="main__container__figure">
+            <img src="../assets/logo.png" alt="Logo Kenzie">
+            <figcaption>Kenzie Academy Brasil Store</figcaption>
+        </figure>
+        
+        <form class="main__container__form">
+            <h1>Faça seu cadastro</h1>
+            <label for="nome">Nome:</label>            
+            <input id="name" name="name" type="text" placeholder="Nome Completo"></input>
+            <label for="email">Email:</label>            
+            <input id="email" name="email" type="text" placeholder="Digite seu email"></input>
+            <label for="password">Senha:</label>
+            <input id="password" name="password" type="text" placeholder="Uma senha segura"></input>
+            <button id="btnSignup" type="submit">Cadastrar</button>
+            <p>Já possui conta? Faça <span id="handleLogin">login</span></p>
+        </form>
+    </main> 
+
+    <script type="module" src="../scripts/signup.js"></script>
 </body>
 </html>
